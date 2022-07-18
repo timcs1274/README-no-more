@@ -38,7 +38,7 @@ const questions = [
 ];
 
 //Template literal string for displaying/formatting the info
-function generateMarkdown(dataUser) {
+function generateMarkdown(dataUser, userInput) {
     //Create table of contents based on the users responses
     let tblOfContents = `## Table of Contents`;
   
@@ -76,33 +76,51 @@ function generateMarkdown(dataUser) {
         titleMarkdown +=
         `
         ## Installation
-        *Include installation steps here:
+        *Include installation steps here:*
         ${dataUser.installation}`
     };
+
+    //Inputing the Usage section
+    if (dataUser.usage !== '') {
+        titleMarkdown +=
+        `
+        ## Usage
+        *Include information about usage:*
+        ${dataUser.usage}`
+    };
+
+    //Inputing the Contributing section
+    if (dataUser.contributing !== '') {
+        titleMarkdown +=
+        `
+        ## Contributing
+        *Include information about the contributors:*
+        ${dataUser.contributing}`
+    };
+
+    //Inputing the Tests section
+    if (dataUser.tests !== '') {
+        titleMarkdown +=
+        `
+        ## Tests
+        *Include information about the Tests:*
+        ${dataUser.contributing}`
+    };
+
+    //Inputing License section
+    titleMarkdown +=
+    `
+    ## License
+    ${dataUser.license}`;
+
+    //Inputing Questions section
+    let questionSection = 
+    `
+    ## Questions?
+    Feel free to contact me if you have any questions!
+    
+    GitHub: [#${userInput.githubName}](${dataUser.GithubURL})`;
+    titleMarkdown += questionSection;
+    return titleMarkdown;
     
 }
-
-//Function to create the file
-const fileName = 'ExampleREADME.md';
-function writeFile(fileName, data) {
-    const readmeFile = generateMarkdown(data);
-    fs.writeFile(fileName, readmeFile, err => {
-        if(err) {
-            console.log(err)
-        }
-        console.log('ExampleREADME.md Created.')
-    })
-}
-
-//Function which runs the previous function
-function init() {
-    inquirer
-    .prompt(questions)
-    .then(function(data) {
-        writeFile(fileName, data)
-    })
-}
-
-init()
-
-//Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
