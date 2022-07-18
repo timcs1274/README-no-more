@@ -38,7 +38,30 @@ function generateMarkdown(data) {
     ##${data.installation}
     ##${data.contributing}
     ##${data.tests}
-    `
+    `;
 }
+
+//Function to create the file
+const fileName = 'README.md';
+function writeFile(fileName, data) {
+    const readmeFile = generateMarkdown(data);
+    fs.writeFile(fileName, readmeFile, err => {
+        if(err) {
+            console.log(err)
+        }
+        console.log('README.md Created.')
+    })
+}
+
+//Function which runs the previous function
+function init() {
+    inquirer
+    .prompt(questions)
+    .then(function(data) {
+        writeFile(fileName, data)
+    })
+}
+
+init()
 
 //Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
