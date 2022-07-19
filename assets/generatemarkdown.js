@@ -102,7 +102,8 @@ function generateMarkdown(dataUser, userInput) {
 
 Feel free to contact me if you have any questions!
     
-GitHub: [#${userInput.githubName}](${dataUser.GithubURL})`;
+GitHub: https://github.com/${dataUser.username}
+My email: ${dataUser.email}`
     titleMarkdown += questionSection;
     return titleMarkdown;
     

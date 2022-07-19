@@ -15,6 +15,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'email',
+        message: 'What is your email?',
+    },
+    {
+        type: 'input',
         name: 'title',
         message: 'Please enter your desired title.',
     },

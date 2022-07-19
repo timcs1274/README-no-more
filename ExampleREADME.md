@@ -1,9 +1,9 @@
-# README-NO-MORE!
+# README.NOMORE!
     
 ## Description
 *Include a description here:*
 
-    This repo creates README.mds so you don't have to!
+    Lorem ipsum dolor sit amet. Et provident recusandae in quae doloremque aut modi neque aut voluptate tempora sed deleniti sapiente eos porro voluptas.
     
 ## Table of Contents
 [Installation](#installation)
@@ -18,7 +18,7 @@
 
 *Include installation steps here:*
 
-        Clone the repo files and run the index with node.js
+        Lorem ipsum dolor sit amet. Et provident recusandae in quae doloremque aut modi neque aut voluptate tempora sed deleniti sapiente eos porro voluptas.
         
 
 ## Usage
@@ -32,13 +32,13 @@
 
 *Include information about the contributors:*
 
-        Feel free to contribute however you want.
+        Lorem ipsum dolor sit amet. Et provident recusandae in quae doloremque aut modi neque aut voluptate tempora sed deleniti sapiente eos porro voluptas.
         
 ## Tests
 
 *Include information about the Tests:*
 
-        Feel free to contribute however you want.
+        Lorem ipsum dolor sit amet. Et provident recusandae in quae doloremque aut modi neque aut voluptate tempora sed deleniti sapiente eos porro voluptas.
         
 ## License
 
@@ -49,4 +49,5 @@
 
 Feel free to contact me if you have any questions!
     
-GitHub: [#undefined](undefined)
+GitHub: https://github.com/timcs1274
+My email: timcs1274@gmail.com
