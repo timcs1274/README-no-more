@@ -30,33 +30,48 @@ function generateMarkdown(dataUser, userInput) {
 
     //Inputing the license section
     titleMarkdown +=`
-    * [License](#license)`;
+
+    * [License](#license)
+
+    `;
 
     //Inputing the installation section
     if (dataUser.installation !== '') {
         titleMarkdown +=
         `
+
         ## Installation
+
         *Include installation steps here:*
-        ${dataUser.installation}`
+
+        ${dataUser.installation}
+        `
     };
 
     //Inputing the Usage section
     if (dataUser.usage !== '') {
         titleMarkdown +=
         `
+
         ## Usage
+
         *Include information about usage:*
-        ${dataUser.usage}`
+
+        ${dataUser.usage}
+        `
     };
 
     //Inputing the Contributing section
     if (dataUser.contributing !== '') {
         titleMarkdown +=
         `
+
         ## Contributing
+
         *Include information about the contributors:*
-        ${dataUser.contributing}`
+
+        ${dataUser.contributing}
+        `
     };
 
     //Inputing the Tests section
@@ -64,20 +79,27 @@ function generateMarkdown(dataUser, userInput) {
         titleMarkdown +=
         `
         ## Tests
+
         *Include information about the Tests:*
-        ${dataUser.contributing}`
+
+        ${dataUser.contributing}
+        `
     };
 
     //Inputing License section
     titleMarkdown +=
     `
     ## License
-    ${dataUser.license}`;
+
+    ${dataUser.license}
+    `;
 
     //Inputing Questions section
     let questionSection = 
     `
+
     ## Questions?
+
     Feel free to contact me if you have any questions!
     
     GitHub: [#${userInput.githubName}](${dataUser.GithubURL})`;
