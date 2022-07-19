@@ -1,9 +1,9 @@
 //Packages needed to install
 const fs = require('fs');
 const inquirer = require('inquirer');
-const assets = require('assets');
-const generateMarkdown = require('./assets/generatemarkdown');
 const axiosCall = require('./assets/axiosfile');
+const generateMarkdown = require('./assets/generatemarkdown');
+
 
 //Array of questions for user input
 const questions = [
