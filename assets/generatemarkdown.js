@@ -1,26 +1,27 @@
 //Template literal string for displaying/formatting the info
 function generateMarkdown(dataUser, userInput) {
     //Create table of contents based on the users responses
-    let tblOfContents = `## Table of Contents`;
+    let tblOfContents = `
+## Table of Contents`;
   
     if (dataUser.installation !== '') { tblOfContents += `
-    * [Installation](#installation)` };
+[Installation](#installation)` };
   
     if (dataUser.usage !== '') { tblOfContents += `
-    * [Usage](#usage)` };
+[Usage](#usage)` };
   
     if (dataUser.contributing !== '') { tblOfContents += `
-    * [Contributing](#contributing)` };
+[Contributing](#contributing)` };
   
     if (dataUser.tests !== '') { tblOfContents += `
-    * [Tests](#tests)` };
+[Tests](#tests)` };
 
     // Title and description of markdown
     let titleMarkdown = 
     `# ${dataUser.title}
     
-    ## Description
-    *Include a description here:*
+## Description
+*Include a description here:*
 
     ${dataUser.description}
     `
@@ -30,8 +31,7 @@ function generateMarkdown(dataUser, userInput) {
 
     //Inputing the license section
     titleMarkdown +=`
-
-    * [License](#license)
+[License](#license)
 
     `;
 
@@ -40,9 +40,9 @@ function generateMarkdown(dataUser, userInput) {
         titleMarkdown +=
         `
 
-        ## Installation
+## Installation
 
-        *Include installation steps here:*
+*Include installation steps here:*
 
         ${dataUser.installation}
         `
@@ -53,9 +53,9 @@ function generateMarkdown(dataUser, userInput) {
         titleMarkdown +=
         `
 
-        ## Usage
+## Usage
 
-        *Include information about usage:*
+*Include information about usage:*
 
         ${dataUser.usage}
         `
@@ -66,9 +66,9 @@ function generateMarkdown(dataUser, userInput) {
         titleMarkdown +=
         `
 
-        ## Contributing
+## Contributing
 
-        *Include information about the contributors:*
+*Include information about the contributors:*
 
         ${dataUser.contributing}
         `
@@ -78,9 +78,9 @@ function generateMarkdown(dataUser, userInput) {
     if (dataUser.tests !== '') {
         titleMarkdown +=
         `
-        ## Tests
+## Tests
 
-        *Include information about the Tests:*
+*Include information about the Tests:*
 
         ${dataUser.contributing}
         `
@@ -89,7 +89,7 @@ function generateMarkdown(dataUser, userInput) {
     //Inputing License section
     titleMarkdown +=
     `
-    ## License
+## License
 
     ${dataUser.license}
     `;
@@ -98,11 +98,11 @@ function generateMarkdown(dataUser, userInput) {
     let questionSection = 
     `
 
-    ## Questions?
+## Questions?
 
-    Feel free to contact me if you have any questions!
+Feel free to contact me if you have any questions!
     
-    GitHub: [#${userInput.githubName}](${dataUser.GithubURL})`;
+GitHub: [#${userInput.githubName}](${dataUser.GithubURL})`;
     titleMarkdown += questionSection;
     return titleMarkdown;
     
