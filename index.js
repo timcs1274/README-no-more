@@ -1,7 +1,9 @@
 //Packages needed to install
 const fs = require('fs');
 const inquirer = require('inquirer');
+const assets = require('assets');
 const generateMarkdown = require('./assets/generatemarkdown');
+const axiosCall = require('./assets/axiosfile');
 
 //Array of questions for user input
 const questions = [
@@ -47,3 +49,27 @@ const questions = [
         choices: ['MIT License', 'Apache License 2.0', 'The Unlicense']
     },
 ];
+
+//function to create file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if(err) {
+            return console.log(err);
+        }
+        console.log('README.md created.')
+    });
+}
+
+async function init() {
+    try {
+        const dataUser = await inquirer.prompt(questions);
+        const userInput = await axiosCall.getUser(dataUser);
+        const markdown = generateMarkdown(dataUser, userInput);
+        await writeFileAsync('ExampleREADME.md', markdown)
+    } catch (err) {
+        console.log(err);
+    }
+};
+
+init();
+
