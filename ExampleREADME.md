@@ -1,9 +1,9 @@
-# README.NOMORE!
+# README-NO-MORE
     
 ## Description
 *Include a description here:*
 
-    Lorem ipsum dolor sit amet. Et provident recusandae in quae doloremque aut modi neque aut voluptate tempora sed deleniti sapiente eos porro voluptas.
+    Lorem ipsum dolor sit amet. Qui quia voluptatibus non quaerat tempora a dolores necessitatibus rem aliquam quo incidunt rerum eos iusto veritatis ut veritatis maiores.
     
 ## Table of Contents
 [Installation](#installation)
@@ -18,7 +18,7 @@
 
 *Include installation steps here:*
 
-        Lorem ipsum dolor sit amet. Et provident recusandae in quae doloremque aut modi neque aut voluptate tempora sed deleniti sapiente eos porro voluptas.
+        Lorem ipsum dolor sit amet. Qui quia voluptatibus non quaerat tempora a dolores necessitatibus rem aliquam quo incidunt rerum eos iusto veritatis ut veritatis maiores.
         
 
 ## Usage
@@ -32,13 +32,13 @@
 
 *Include information about the contributors:*
 
-        Lorem ipsum dolor sit amet. Et provident recusandae in quae doloremque aut modi neque aut voluptate tempora sed deleniti sapiente eos porro voluptas.
+        Lorem ipsum dolor sit amet. Qui quia voluptatibus non quaerat tempora a dolores necessitatibus rem aliquam quo incidunt rerum eos iusto veritatis ut veritatis maiores.
         
 ## Tests
 
 *Include information about the Tests:*
 
-        Lorem ipsum dolor sit amet. Et provident recusandae in quae doloremque aut modi neque aut voluptate tempora sed deleniti sapiente eos porro voluptas.
+        Lorem ipsum dolor sit amet. Qui quia voluptatibus non quaerat tempora a dolores necessitatibus rem aliquam quo incidunt rerum eos iusto veritatis ut veritatis maiores.
         
 ## License
 

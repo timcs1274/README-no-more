@@ -1,9 +1,9 @@
 # README-NO-MORE!
     
 ## Description
-*Include a description here:*
+*Finished writing code and too tired to format a README? Me too.*
 
-    This repo creates README.mds so you don't have to!
+    This repository houses a project which allows for easy README.md generation. The goal of this project is to make any future endeavours easier by minimizing the amount of time you'd spend on formatting a README file.
     
 ## Table of Contents
 [Installation](#installation)
@@ -16,29 +16,18 @@
 
 ## Installation
 
-*Include installation steps here:*
+*Installing this project is easy!*
 
-        Clone the repo files and run the index with node.js
+        First, clone the code to your device and save it somewhere you can easily access it. Open up your terminal and locate the file. Run "npm install" to download the packages. Run the command "node index.js" and follow the series of prompts to generate the README that you desire!
         
 
 ## Usage
 
-*Include information about usage:*
+*Save time by using this premade template!*
 
-        undefined
+        If you're too tired after completing the heavy lifting of writing code, this template can easily help you set up a Professional README template.
         
-
-## Contributing
-
-*Include information about the contributors:*
-
-        Feel free to contribute however you want.
-        
-## Tests
-
-*Include information about the Tests:*
-
-        Feel free to contribute however you want.
+        ![README gif](/READMEGEN%20DEMO.gif)
         
 ## License
 
@@ -49,4 +38,5 @@
 
 Feel free to contact me if you have any questions!
     
-GitHub: [#undefined](undefined)
+GitHub: https://github.com/timcs1274
+My email: timcs1274@gmail.com
