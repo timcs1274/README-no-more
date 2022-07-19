@@ -22,7 +22,7 @@
 
         First, clone the code to your device and save it somewhere you can easily access it. 
         Open up your terminal and locate the file. Run "npm install" to download the packages. 
-        Run the command "node index.js" and follow the series of prompts to generate the README that you desire!
+        Run the command "node index.js" and follow the prompts to generate the README that you desire!
         
 
 ## Usage
@@ -44,4 +44,5 @@
 Feel free to contact me if you have any questions!
     
 GitHub: https://github.com/timcs1274
+
 My email: timcs1274@gmail.com
