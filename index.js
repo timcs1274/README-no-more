@@ -1,6 +1,7 @@
 //Packages needed to install
 const fs = require('fs');
 const inquirer = require('inquirer');
+const util = require('util')
 const axiosCall = require('./assets/axiosfile');
 const generateMarkdown = require('./assets/generatemarkdown');
 
@@ -59,6 +60,8 @@ function writeToFile(fileName, data) {
         console.log('README.md created.')
     });
 }
+
+const writeFileAsync = util.promisify(writeToFile);
 
 async function init() {
     try {
