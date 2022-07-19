@@ -35,6 +35,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'usage',
+        message: 'Please include any usage information.',
+    },
+    {
+        type: 'input',
         name: 'contributing',
         message: 'Please include information on how to contribute',
     },
